@@ -1,0 +1,238 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+
+
+int msgcalculadora();
+int msgjuego();
+int msgcalculararea();
+
+
+int main()
+{
+    int op1;
+    system("CLS");
+    printf("MENU \n");
+    printf("1.- Ir a calculadora \n");
+    printf("2.- Ir a juego \n");
+    printf("3.- Ir a calculadora de areas \n");
+    printf("0.- SALIR  \n");
+    scanf("%d", &op1);
+
+    do
+    {
+        switch (op1)
+        {
+            case 1:
+                msgcalculadora();
+                break;
+
+            case 2:
+                msgjuego();
+                break;
+
+            case 3:
+                msgcalculararea();
+                break;
+        }
+
+    } 
+    while (op1 != 0);
+    
+}
+
+int msgcalculadora()
+{
+    int op2,num1,num2,op;
+    system("CLS");
+    printf("MENU CALCULADORA\n");
+    printf("1.- SUMA\n");
+    printf("2.- RESTA\n");
+    printf("3.- MULTIPLICACION\n");
+    printf("3.- DIVISION\n");
+    printf("0.- SALIR  \n");
+    scanf("%d", &op2);
+
+    do
+    {
+        switch (op2)
+        {
+            case 1:
+                printf("Dame el primer numero ");
+                scanf("%d",num1);
+                printf("Dame el segundo numero ");
+                scanf("%d",num2);
+                op=num1+num2;
+                printf("La suma de los numeros %d%d",num1, " + ",num2, " es igual a: %d",op);
+                
+
+                
+                break;
+
+            case 2:
+                msgjuego();
+                break;
+
+            case 3:
+                msgcalculararea();
+                break;
+        }
+
+    } 
+    while (op2 != 0);
+
+}
+
+int msgjuego()
+{
+    int op3;
+    system("CLS");
+    printf("MENU JUEGO \n");
+    printf("1.- SUMA\n");
+    printf("2.- RESTA\n");
+    printf("3.- MULTIPLICACION\n");
+    printf("3.- DIVISION\n");
+    printf("0.- SALIR  \n");
+    scanf("%d", &op3);
+
+    do
+    {
+        switch (op3)
+        {
+            case 1:
+                msgcalculadora();
+                break;
+
+            case 2:
+                msgjuego();
+                break;
+
+            case 3:
+                msgcalculararea();
+                break;
+        }
+
+    } 
+    while (op3 != 0);
+}
+
+int msgcalculararea()
+{
+    int op4;
+    system("CLS");
+    printf("MENU CALCULADORA AREA \n");
+    printf("1.- SUMA\n");
+    printf("2.- RESTA\n");
+    printf("3.- MULTIPLICACION\n");
+    printf("3.- DIVISION\n");
+    printf("0.- SALIR  \n");
+    scanf("%d", &op4);
+
+    do
+    {
+        switch (op4)
+        {
+            case 1:
+                msgcalculadora();
+                break;
+
+            case 2:
+                msgjuego();
+                break;
+
+            case 3:
+                msgcalculararea();
+                break;
+        }
+
+    } 
+    while (op4 != 0);
+}
+
+ /*
+void menu()
+{
+
+    int op1;
+    do
+    {
+        op1 = msg();
+        switch (op1)
+        {
+            case 1:
+                calculadora();
+                break;
+
+            case 2:
+                juego();
+                break;
+
+            case 3:
+                calculadoraarea();
+                break;
+        }
+
+    } 
+    while (op1 != 0);
+}
+*/
+
+
+
+
+
+
+
+
+
+/*
+int main()
+{
+    int op;
+    system("CLS");
+    printf("MENU\n");
+    printf("1.- Ir a la calculadora \n");
+    printf("2.- Ir al juego \n");
+    printf("3.- Calculadora de areas \n");
+    printf("0.- SALIR\n");
+    printf("");
+    scanf("%d",&op);
+    return op;
+
+
+
+
+
+    do
+    {
+        switch (op)
+        {
+            case 1:
+            {
+
+
+            }
+                break;
+
+            case 2:
+            {
+
+            }
+        
+                break;
+
+            case 3:
+            {
+
+            }
+         
+                break;
+        }
+        
+    } 
+    while (op!=0);
+
+    system("pause");
+
+}*/
